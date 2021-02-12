@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+
+    tools:context=".signUp">
+
+
+    <LinearLayout
+        app:layout_constraintCircleRadius="@dimen/activity_horizontal_margin"
+            android:layout_width="0dp"
+        android:layout_height="169dp"
+        android:layout_margin="10dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/Image"
+            android:layout_width="wrap_content"
+            android:layout_height="116dp"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="fitXY"
+            android:src="@drawable/a1"
+            tools:layout_editor_absoluteX="-1dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <TextView
+            android:id="@+id/Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="500 Frw"
+            android:textColor="#1a62e7"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Image" />
+
+<!--            <TextView-->
+<!--                android:id="@+id/textView3"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:text="Name"-->
+<!--                android:textColor="#3F51B5"-->
+<!--                android:textSize="18sp"-->
+<!--                android:textStyle="bold"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/Image" />-->
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">AgrMangement</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="title">Login</string>
+    <string name="signup">signup</string>
+    <string name="fullname">fullname</string>
+    <string name="username">username</string>
+    <string name="loginhere">Alread have account? Login</string>
+    <string name="signUphere">Create new account? SignUp</string>
+    <string name="loginText">Login</string>
+    <string name="user">Username</string>
+    <string name="title_listitems">Title For List Items</string>
+    <string name="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Laoreet non curabitur gravida arcu ac tortor dignissim convallis aenean.</string>
+    <string name="like">Like</string>
+    <string name="comment">Comment</string>
+    <string name="more">More</string>
+    <string name="share">Share</string>
+    <string name="title_activity_single_product">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="product_note">kdhjk ljihjd hjd</string>
+</resources>

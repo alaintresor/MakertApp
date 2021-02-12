@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:minHeight="?attr/actionBarSize"
+        android:background="#1a62e7"
+        app:titleTextColor="@color/white"
+        />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Categories"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            />
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:id="@+id/cat1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+
+                        android:id="@+id/imageView"
+                        android:layout_width="100dp"
+                        android:layout_height="65dp"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/imboga" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textStyle="bold"
+                        android:textColor="#1a62e7"
+                        android:text="IMBOGA" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/cat2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageView1"
+                        android:layout_width="100dp"
+                        android:layout_height="65dp"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/ibiri" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textStyle="bold"
+                        android:textColor="#1a62e7"
+                        android:text="IBIRIBWA" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/cat3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="100dp"
+                        android:layout_height="65dp"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/imbuto1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textStyle="bold"
+                        android:textColor="#1a62e7"
+                        android:text="IMBUTO" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/cat4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="100dp"
+                        android:layout_height="65dp"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/amatu" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textStyle="bold"
+                        android:textColor="#1a62e7"
+                        android:text="AMATUNGO" />
+                </LinearLayout>
+
+<!--                <LinearLayout-->
+<!--                    android:id="@+id/cat5"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="vertical">-->
+
+<!--                    <ImageView-->
+<!--                        android:id="@+id/imageView4"-->
+<!--                        android:layout_width="117dp"-->
+<!--                        android:layout_height="107dp"-->
+<!--                        android:layout_margin="10dp"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:scaleType="centerCrop"-->
+<!--                        app:srcCompat="@drawable/a2" />-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_gravity="center"-->
+<!--                        android:text="Imboga" />-->
+<!--                </LinearLayout>-->
+
+<!--                <LinearLayout-->
+<!--                    android:id="@+id/cat6"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="vertical">-->
+
+<!--                    <ImageView-->
+<!--                        android:id="@+id/imageView5"-->
+<!--                        android:layout_width="117dp"-->
+<!--                        android:layout_height="107dp"-->
+<!--                        android:layout_margin="10dp"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:scaleType="centerCrop"-->
+<!--                        app:srcCompat="@drawable/a2" />-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_gravity="center"-->
+<!--                        android:text="Imboga" />-->
+<!--                </LinearLayout>-->
+
+
+            </LinearLayout>
+        </HorizontalScrollView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="Recent Product"
+            />
+        <ProgressBar
+            android:id="@+id/vProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:layout_marginTop="@android:dimen/thumbnail_height"
+            />
+
+        <GridView
+            android:id="@+id/MyList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#DFE3E4"
+            android:numColumns="2" />
+
+    </LinearLayout>
+
+</LinearLayout>
