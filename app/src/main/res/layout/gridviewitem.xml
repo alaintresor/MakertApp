@@ -9,21 +9,28 @@
 
 
     <LinearLayout
-        app:layout_constraintCircleRadius="@dimen/activity_horizontal_margin"
-            android:layout_width="0dp"
-        android:layout_height="169dp"
+        android:layout_width="391dp"
+        android:layout_height="179dp"
         android:layout_margin="10dp"
         android:background="@color/white"
         android:orientation="vertical"
         android:padding="10sp"
+        app:layout_constraintCircleRadius="@dimen/activity_horizontal_margin"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
+        <TextView
+            android:id="@+id/av"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Available: Now"
+            android:textColor="#CC2C2C" />
+
         <ImageView
             android:id="@+id/Image"
             android:layout_width="wrap_content"
-            android:layout_height="116dp"
+            android:layout_height="109dp"
             android:layout_gravity="center_horizontal"
             android:scaleType="fitXY"
             android:src="@drawable/a1"
@@ -41,18 +48,18 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/Image" />
 
-<!--            <TextView-->
-<!--                android:id="@+id/textView3"-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
+        <!--            <TextView-->
+        <!--                android:id="@+id/textView3"-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
 
-<!--                android:layout_marginTop="10dp"-->
-<!--                android:text="Name"-->
-<!--                android:textColor="#3F51B5"-->
-<!--                android:textSize="18sp"-->
-<!--                android:textStyle="bold"-->
-<!--                app:layout_constraintStart_toStartOf="parent"-->
-<!--                app:layout_constraintTop_toBottomOf="@+id/Image" />-->
+        <!--                android:layout_marginTop="10dp"-->
+        <!--                android:text="Name"-->
+        <!--                android:textColor="#3F51B5"-->
+        <!--                android:textSize="18sp"-->
+        <!--                android:textStyle="bold"-->
+        <!--                app:layout_constraintStart_toStartOf="parent"-->
+        <!--                app:layout_constraintTop_toBottomOf="@+id/Image" />-->
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -38,12 +38,13 @@ public class catAdpter extends ArrayAdapter<catSetData> {
         View view = layoutInflater.inflate(resource, null, false);
 
         TextView catName = view.findViewById(R.id.Name);
+        TextView availableDate=view.findViewById(R.id.av);
 
         ImageView image=view.findViewById(R.id.Image);
 
         final com.example.agrmangement.catSetData catSetDataNew = catSetData.get(position);
         catName.setText(catSetDataNew.getCatName());
-
+        availableDate.setText("Available: "+catSetDataNew.getAvailableDate());
         Picasso.get().load(catSetDataNew.getImage()).into(image);
 
         return view;

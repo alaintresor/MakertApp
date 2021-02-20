@@ -23,6 +23,7 @@
             android:background="#1a62e7"
             android:minHeight="?attr/actionBarSize"
             app:titleTextColor="@color/white" />
+
     </LinearLayout>
 
     <ImageView
@@ -40,12 +41,10 @@
         android:id="@+id/name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="28dp"
         android:text="Ibishimbo"
         android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/textView4"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imagepro" />
 
@@ -53,12 +52,11 @@
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
-        android:layout_marginLeft="60dp"
         android:layout_marginTop="28dp"
-        android:text="available:"
+        android:text="In Stock:"
         android:textSize="16sp"
         app:layout_constraintEnd_toStartOf="@+id/available"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/name"
         app:layout_constraintTop_toBottomOf="@+id/imagepro" />
 
@@ -67,24 +65,25 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
-        android:layout_marginEnd="60dp"
-        android:layout_marginRight="60dp"
         android:text="500kg"
+        android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@+id/textView6"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/textView4"
         app:layout_constraintTop_toBottomOf="@+id/imagepro" />
 
     <TextView
         android:id="@+id/textView6"
-        android:layout_width="39dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
+        android:layout_marginEnd="2dp"
         android:text="U.P:"
         android:textSize="16sp"
         app:layout_constraintEnd_toStartOf="@+id/Uprice"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/available"
         app:layout_constraintTop_toBottomOf="@+id/imagepro" />
 
     <TextView
@@ -212,6 +211,29 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <TextView
+        android:id="@+id/availableFrom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="20dp"
+        android:text="2021-02-28"
+        android:textColor="#9A0606"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ordering" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="2dp"
+        android:text="Available From:"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/availableFrom"
+        app:layout_constraintTop_toBottomOf="@+id/ordering" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

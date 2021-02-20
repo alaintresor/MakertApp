@@ -69,6 +69,7 @@ public class singleProduct extends AppCompatActivity {
         final TextView available = (TextView) findViewById(R.id.available);
         final TextView qtyInput = (TextView) findViewById(R.id.qty);
         final TextView UP = (TextView) findViewById(R.id.Uprice);
+        final TextView availableFrom=(TextView)findViewById(R.id.availableFrom);
         Button addCart = (Button) findViewById(R.id.addToCart);
         Button order = (Button) findViewById(R.id.ordering);
 
@@ -82,6 +83,7 @@ public class singleProduct extends AppCompatActivity {
         final String avble = getIntent().getStringExtra("qty");
         final String price = getIntent().getStringExtra("price");
         final String category = getIntent().getStringExtra("category");
+        final String availableDate=getIntent().getStringExtra("availableDate");
 
         //Order product
         order.setOnClickListener(new View.OnClickListener() {
@@ -153,6 +155,7 @@ public class singleProduct extends AppCompatActivity {
                             field[4] = "proPrice";
                             field[5] = "proQty";
                             field[6] = "availableQty";
+                            field[7]="availableDate";
                             //Creating array for data
                             String[] data = new String[7];
                             data[0] = userId;
@@ -162,6 +165,7 @@ public class singleProduct extends AppCompatActivity {
                             data[4] = price;
                             data[5] = qtyInput.getText().toString();
                             data[6] = avble;
+                            data[7]=availableDate;
                             PutData putData = new PutData("http://192.168.43.114/androidN/addToCart.php", "POST", field, data);
                             if (putData.startPut()) {
                                 if (putData.onComplete()) {
@@ -188,6 +192,7 @@ public class singleProduct extends AppCompatActivity {
         available.setText(avble);
         UP.setText(price);
         Picasso.get().load(image).into(imagePro);
+        availableFrom.setText(availableDate);
 
 
 //        Similar Products
@@ -220,9 +225,10 @@ public class singleProduct extends AppCompatActivity {
                                 String qty = object.getString("qty");
                                 String price = object.getString("price");
                                 String description = object.getString("description");
+                                String availableDate = object.getString("availableDate");
                                 String image = object.getString("image");
                                 String category = object.getString("category");
-                                catSetData.add(new catSetData(name, description, image, id, qty, price, category));
+                                catSetData.add(new catSetData(name, description, image, id, qty, price, category, availableDate));
 //
 
                             }

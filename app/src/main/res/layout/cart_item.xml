@@ -96,4 +96,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cartQty" />
 
+    <TextView
+        android:id="@+id/avD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="13dp"
+        android:text="Available: Now"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/reduce" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

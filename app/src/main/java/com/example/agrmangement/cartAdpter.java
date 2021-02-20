@@ -48,6 +48,7 @@ public class cartAdpter extends ArrayAdapter<setCartData> {
         TextView close = view.findViewById(R.id.close);
         ImageView img = view.findViewById(R.id.cartImage);
         TextView price = view.findViewById(R.id.cartPrice);
+        TextView availableDate=view.findViewById(R.id.avD);
         final TextView cartQty = view.findViewById(R.id.cartQty);
         Button add = view.findViewById(R.id.add);
         Button reduce = view.findViewById(R.id.reduce);
@@ -57,7 +58,7 @@ public class cartAdpter extends ArrayAdapter<setCartData> {
         price.setText(setCartDataNew.getPrice() + "Frw");
         cartQty.setText(setCartDataNew.getQty());
         Picasso.get().load(setCartDataNew.getImage()).into(img);
-
+        availableDate.setText("Available: "+setCartDataNew.getAvailableDate());
         //add to qty
         add.setOnClickListener(new View.OnClickListener() {
             @Override

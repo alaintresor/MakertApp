@@ -99,9 +99,10 @@ public class cart extends AppCompatActivity {
                                     String proQty = object.getString("proQty");
                                     String proName = object.getString("proName");
                                     String inStock = object.getString("inStock");
+                                    String availableDate = object.getString("availableDate");
                                     payOut[0] = payOut[0] + (parseInt(proPrice) * parseInt(proQty));
 
-                                    setCartData.add(new setCartData(id, proId, proImage, proName, "u", "qty", proPrice, proQty, inStock));
+                                    setCartData.add(new setCartData(id, proId, proImage, proName, "u", "qty", proPrice, proQty, inStock, availableDate));
 
                                 }
                                 cartAdpter cartAdpter = new cartAdpter(getApplicationContext(), R.layout.cart_item, setCartData);
@@ -218,6 +219,7 @@ public class cart extends AppCompatActivity {
 
 
     }
+
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
@@ -228,9 +230,9 @@ public class cart extends AppCompatActivity {
                 startActivity(intent);
                 break;
             case R.id.order:
-                Intent intent1 = new Intent(getApplicationContext(),Orders.class);
-                final String userId1=getIntent().getStringExtra("userId");
-                intent1.putExtra("userId",userId1);
+                Intent intent1 = new Intent(getApplicationContext(), Orders.class);
+                final String userId1 = getIntent().getStringExtra("userId");
+                intent1.putExtra("userId", userId1);
                 startActivity(intent1);
         }
         return super.onOptionsItemSelected(item);

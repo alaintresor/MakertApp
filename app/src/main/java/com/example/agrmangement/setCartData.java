@@ -6,10 +6,10 @@ import static java.lang.Integer.parseInt;
 
 public class setCartData {
 
-    String id, proId, image, name, status, category, price, qty, inStock;
+    String id, proId, image, name, status, category, price, qty, inStock,availableDate;
 
 
-    public setCartData(String id, String proId, String image, String name, String status, String category, String price, String qty, String inStock) {
+    public setCartData(String id, String proId, String image, String name, String status, String category, String price, String qty, String inStock,String availableDate) {
         this.id = id;
         this.image = image;
         this.name = name;
@@ -19,6 +19,7 @@ public class setCartData {
         this.qty = qty;
         this.proId = proId;
         this.inStock = inStock;
+        this.availableDate=availableDate;
 
     }
 
@@ -52,6 +53,10 @@ public class setCartData {
 
     public String getQty() {
         return qty;
+    }
+
+    public String getAvailableDate() {
+        return availableDate;
     }
 
     public boolean addToQty() {
